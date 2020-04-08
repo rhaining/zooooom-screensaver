@@ -7,15 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFBAFABE24379B3D004F41CE /* ZuumScreensaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBAFABD24379B3D004F41CE /* ZuumScreensaverView.h */; };
-		EFBAFAC024379B3D004F41CE /* ZuumScreensaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFABF24379B3D004F41CE /* ZuumScreensaverView.m */; };
+		EF0E7094243A3CAF0082305E /* Blockbuster.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E7093243A3CAF0082305E /* Blockbuster.swift */; };
+		EF0E7095243A3CAF0082305E /* Blockbuster.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E7093243A3CAF0082305E /* Blockbuster.swift */; };
+		EF0E7099243A5ACD0082305E /* ConfigFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E7098243A5ACD0082305E /* ConfigFetcher.swift */; };
+		EF0E709A243A5ACD0082305E /* ConfigFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E7098243A5ACD0082305E /* ConfigFetcher.swift */; };
+		EF0E709C243A5B360082305E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E709B243A5B360082305E /* Config.swift */; };
+		EF0E709D243A5B360082305E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E709B243A5B360082305E /* Config.swift */; };
+		EFBAFAC924379B56004F41CE /* ZuumScreensaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFAC824379B56004F41CE /* ZuumScreensaverView.swift */; };
+		EFBAFAD124379BF0004F41CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFAD024379BF0004F41CE /* AppDelegate.swift */; };
+		EFBAFAD524379BF2004F41CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBAFAD424379BF2004F41CE /* Assets.xcassets */; };
+		EFBAFAD824379BF2004F41CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBAFAD724379BF2004F41CE /* Preview Assets.xcassets */; };
+		EFBAFADB24379BF2004F41CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFBAFAD924379BF2004F41CE /* Main.storyboard */; };
+		EFBAFAE724379BF2004F41CE /* ZuumPreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFAE624379BF2004F41CE /* ZuumPreviewTests.swift */; };
+		EFBAFAF224379BF2004F41CE /* ZuumPreviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFAF124379BF2004F41CE /* ZuumPreviewUITests.swift */; };
+		EFBAFB0024379C1A004F41CE /* PreviewScreensaverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFAFE24379C1A004F41CE /* PreviewScreensaverViewController.swift */; };
+		EFBAFB0124379C3D004F41CE /* ZuumScreensaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFAC824379B56004F41CE /* ZuumScreensaverView.swift */; };
+		EFBAFB092437BED1004F41CE /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFB082437BED1004F41CE /* ConnectingView.swift */; };
+		EFBAFB0A2437BED1004F41CE /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFB082437BED1004F41CE /* ConnectingView.swift */; };
+		EFC091E8243B7FFB001E0DEC /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091E7243B7FFB001E0DEC /* Dice.swift */; };
+		EFC091E9243B8004001E0DEC /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091E7243B7FFB001E0DEC /* Dice.swift */; };
+		EFC091ED243B933C001E0DEC /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = EFC091EB243B933B001E0DEC /* thumbnail.png */; };
+		EFC091EE243B933C001E0DEC /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFC091EC243B933C001E0DEC /* thumbnail@2x.png */; };
+		EFC091F0243BD683001E0DEC /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091EF243BD683001E0DEC /* ToolbarView.swift */; };
+		EFC091F1243BD683001E0DEC /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091EF243BD683001E0DEC /* ToolbarView.swift */; };
+		EFC091F6243CE8E0001E0DEC /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091F5243CE8E0001E0DEC /* MenuBarView.swift */; };
+		EFC091F7243CE8E0001E0DEC /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091F5243CE8E0001E0DEC /* MenuBarView.swift */; };
+		EFC091F9243E3125001E0DEC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091F8243E3125001E0DEC /* ErrorView.swift */; };
+		EFC091FA243E3125001E0DEC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091F8243E3125001E0DEC /* ErrorView.swift */; };
+		EFC091FC243E50FE001E0DEC /* VideoPlayerStateOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091FB243E50FE001E0DEC /* VideoPlayerStateOverlay.swift */; };
+		EFC091FD243E50FE001E0DEC /* VideoPlayerStateOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091FB243E50FE001E0DEC /* VideoPlayerStateOverlay.swift */; };
+		EFC091FF243E5BC7001E0DEC /* VersionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091FE243E5BC7001E0DEC /* VersionHelper.swift */; };
+		EFC09200243E5BC7001E0DEC /* VersionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC091FE243E5BC7001E0DEC /* VersionHelper.swift */; };
+		EFE7A92F2438EAE200F8D8E1 /* VideoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7A92E2438EAE200F8D8E1 /* VideoGridViewController.swift */; };
+		EFE7A9302438EAE200F8D8E1 /* VideoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7A92E2438EAE200F8D8E1 /* VideoGridViewController.swift */; };
+		EFE7A9322438EC1400F8D8E1 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7A9312438EC1400F8D8E1 /* VideoPlayerView.swift */; };
+		EFE7A9332438EC1400F8D8E1 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7A9312438EC1400F8D8E1 /* VideoPlayerView.swift */; };
+		EFE7A9362439388F00F8D8E1 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7A9352439388F00F8D8E1 /* ProgressIndicator.swift */; };
+		EFE7A9372439388F00F8D8E1 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7A9352439388F00F8D8E1 /* ProgressIndicator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EFBAFAE324379BF2004F41CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFBAFAB124379B3D004F41CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFBAFACD24379BF0004F41CE;
+			remoteInfo = ZuumPreview;
+		};
+		EFBAFAEE24379BF2004F41CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFBAFAB124379B3D004F41CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFBAFACD24379BF0004F41CE;
+			remoteInfo = ZuumPreview;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		EFBAFABA24379B3D004F41CE /* ZuumScreensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuumScreensaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFBAFABD24379B3D004F41CE /* ZuumScreensaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZuumScreensaverView.h; sourceTree = "<group>"; };
-		EFBAFABF24379B3D004F41CE /* ZuumScreensaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZuumScreensaverView.m; sourceTree = "<group>"; };
+		EF0E7093243A3CAF0082305E /* Blockbuster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockbuster.swift; sourceTree = "<group>"; };
+		EF0E7098243A5ACD0082305E /* ConfigFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigFetcher.swift; sourceTree = "<group>"; };
+		EF0E709B243A5B360082305E /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		EF0E709F243A5F410082305E /* open_log.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = open_log.sh; sourceTree = "<group>"; };
+		EF0E70A0243A5F410082305E /* notarize.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = notarize.sh; sourceTree = "<group>"; };
+		EFBAFABA24379B3D004F41CE /* Zooooom.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Zooooom.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBAFAC124379B3D004F41CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFBAFAC724379B55004F41CE /* ZuumScreensaver-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZuumScreensaver-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFBAFAC824379B56004F41CE /* ZuumScreensaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuumScreensaverView.swift; sourceTree = "<group>"; };
+		EFBAFACE24379BF0004F41CE /* ZuumPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZuumPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBAFAD024379BF0004F41CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFBAFAD424379BF2004F41CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFBAFAD724379BF2004F41CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFBAFADA24379BF2004F41CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFBAFADC24379BF2004F41CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFBAFADD24379BF2004F41CE /* ZuumPreview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZuumPreview.entitlements; sourceTree = "<group>"; };
+		EFBAFAE224379BF2004F41CE /* ZuumPreviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuumPreviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBAFAE624379BF2004F41CE /* ZuumPreviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuumPreviewTests.swift; sourceTree = "<group>"; };
+		EFBAFAE824379BF2004F41CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFBAFAED24379BF2004F41CE /* ZuumPreviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZuumPreviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBAFAF124379BF2004F41CE /* ZuumPreviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuumPreviewUITests.swift; sourceTree = "<group>"; };
+		EFBAFAF324379BF2004F41CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFBAFAFE24379C1A004F41CE /* PreviewScreensaverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewScreensaverViewController.swift; sourceTree = "<group>"; };
+		EFBAFB082437BED1004F41CE /* ConnectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingView.swift; sourceTree = "<group>"; };
+		EFC091E7243B7FFB001E0DEC /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		EFC091EB243B933B001E0DEC /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		EFC091EC243B933C001E0DEC /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+		EFC091EF243BD683001E0DEC /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		EFC091F5243CE8E0001E0DEC /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		EFC091F8243E3125001E0DEC /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		EFC091FB243E50FE001E0DEC /* VideoPlayerStateOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerStateOverlay.swift; sourceTree = "<group>"; };
+		EFC091FE243E5BC7001E0DEC /* VersionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionHelper.swift; sourceTree = "<group>"; };
+		EFE7A92E2438EAE200F8D8E1 /* VideoGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGridViewController.swift; sourceTree = "<group>"; };
+		EFE7A9312438EC1400F8D8E1 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		EFE7A9352439388F00F8D8E1 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,13 +109,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFBAFACB24379BF0004F41CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBAFADF24379BF2004F41CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBAFAEA24379BF2004F41CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF0E7096243A5A8F0082305E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFE7A9312438EC1400F8D8E1 /* VideoPlayerView.swift */,
+				EFC091FB243E50FE001E0DEC /* VideoPlayerStateOverlay.swift */,
+				EFBAFB082437BED1004F41CE /* ConnectingView.swift */,
+				EFC091F8243E3125001E0DEC /* ErrorView.swift */,
+				EFE7A9352439388F00F8D8E1 /* ProgressIndicator.swift */,
+				EFC091EF243BD683001E0DEC /* ToolbarView.swift */,
+				EFC091F5243CE8E0001E0DEC /* MenuBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF0E7097243A5AAD0082305E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF0E7098243A5ACD0082305E /* ConfigFetcher.swift */,
+				EF0E709B243A5B360082305E /* Config.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF0E709E243A5F410082305E /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				EF0E709F243A5F410082305E /* open_log.sh */,
+				EF0E70A0243A5F410082305E /* notarize.sh */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
 		EFBAFAB024379B3D004F41CE = {
 			isa = PBXGroup;
 			children = (
+				EF0E709E243A5F410082305E /* bin */,
 				EFBAFABC24379B3D004F41CE /* ZuumScreensaver */,
+				EFBAFACF24379BF0004F41CE /* ZuumPreview */,
+				EFBAFAE524379BF2004F41CE /* ZuumPreviewTests */,
+				EFBAFAF024379BF2004F41CE /* ZuumPreviewUITests */,
 				EFBAFABB24379B3D004F41CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +180,10 @@
 		EFBAFABB24379B3D004F41CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EFBAFABA24379B3D004F41CE /* ZuumScreensaver.saver */,
+				EFBAFABA24379B3D004F41CE /* Zooooom.saver */,
+				EFBAFACE24379BF0004F41CE /* ZuumPreview.app */,
+				EFBAFAE224379BF2004F41CE /* ZuumPreviewTests.xctest */,
+				EFBAFAED24379BF2004F41CE /* ZuumPreviewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,11 +191,67 @@
 		EFBAFABC24379B3D004F41CE /* ZuumScreensaver */ = {
 			isa = PBXGroup;
 			children = (
-				EFBAFABD24379B3D004F41CE /* ZuumScreensaverView.h */,
-				EFBAFABF24379B3D004F41CE /* ZuumScreensaverView.m */,
+				EFBAFAC824379B56004F41CE /* ZuumScreensaverView.swift */,
+				EFE7A92E2438EAE200F8D8E1 /* VideoGridViewController.swift */,
+				EFC091EA243B845C001E0DEC /* Video Management */,
+				EF0E7097243A5AAD0082305E /* Network */,
+				EF0E7096243A5A8F0082305E /* Views */,
+				EFC091FE243E5BC7001E0DEC /* VersionHelper.swift */,
 				EFBAFAC124379B3D004F41CE /* Info.plist */,
+				EFC091EB243B933B001E0DEC /* thumbnail.png */,
+				EFC091EC243B933C001E0DEC /* thumbnail@2x.png */,
+				EFBAFAC724379B55004F41CE /* ZuumScreensaver-Bridging-Header.h */,
 			);
 			path = ZuumScreensaver;
+			sourceTree = "<group>";
+		};
+		EFBAFACF24379BF0004F41CE /* ZuumPreview */ = {
+			isa = PBXGroup;
+			children = (
+				EFBAFAD024379BF0004F41CE /* AppDelegate.swift */,
+				EFBAFAFE24379C1A004F41CE /* PreviewScreensaverViewController.swift */,
+				EFBAFAD424379BF2004F41CE /* Assets.xcassets */,
+				EFBAFAD924379BF2004F41CE /* Main.storyboard */,
+				EFBAFADC24379BF2004F41CE /* Info.plist */,
+				EFBAFADD24379BF2004F41CE /* ZuumPreview.entitlements */,
+				EFBAFAD624379BF2004F41CE /* Preview Content */,
+			);
+			path = ZuumPreview;
+			sourceTree = "<group>";
+		};
+		EFBAFAD624379BF2004F41CE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EFBAFAD724379BF2004F41CE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFBAFAE524379BF2004F41CE /* ZuumPreviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFBAFAE624379BF2004F41CE /* ZuumPreviewTests.swift */,
+				EFBAFAE824379BF2004F41CE /* Info.plist */,
+			);
+			path = ZuumPreviewTests;
+			sourceTree = "<group>";
+		};
+		EFBAFAF024379BF2004F41CE /* ZuumPreviewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFBAFAF124379BF2004F41CE /* ZuumPreviewUITests.swift */,
+				EFBAFAF324379BF2004F41CE /* Info.plist */,
+			);
+			path = ZuumPreviewUITests;
+			sourceTree = "<group>";
+		};
+		EFC091EA243B845C001E0DEC /* Video Management */ = {
+			isa = PBXGroup;
+			children = (
+				EF0E7093243A3CAF0082305E /* Blockbuster.swift */,
+				EFC091E7243B7FFB001E0DEC /* Dice.swift */,
+			);
+			path = "Video Management";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,16 +261,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFBAFABE24379B3D004F41CE /* ZuumScreensaverView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EFBAFAB924379B3D004F41CE /* ZuumScreensaver */ = {
+		EFBAFAB924379B3D004F41CE /* Zooooom */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFBAFAC424379B3D004F41CE /* Build configuration list for PBXNativeTarget "ZuumScreensaver" */;
+			buildConfigurationList = EFBAFAC424379B3D004F41CE /* Build configuration list for PBXNativeTarget "Zooooom" */;
 			buildPhases = (
 				EFBAFAB524379B3D004F41CE /* Headers */,
 				EFBAFAB624379B3D004F41CE /* Sources */,
@@ -82,10 +280,63 @@
 			);
 			dependencies = (
 			);
-			name = ZuumScreensaver;
+			name = Zooooom;
 			productName = ZuumScreensaver;
-			productReference = EFBAFABA24379B3D004F41CE /* ZuumScreensaver.saver */;
+			productReference = EFBAFABA24379B3D004F41CE /* Zooooom.saver */;
 			productType = "com.apple.product-type.bundle";
+		};
+		EFBAFACD24379BF0004F41CE /* ZuumPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFBAFAF424379BF2004F41CE /* Build configuration list for PBXNativeTarget "ZuumPreview" */;
+			buildPhases = (
+				EFBAFACA24379BF0004F41CE /* Sources */,
+				EFBAFACB24379BF0004F41CE /* Frameworks */,
+				EFBAFACC24379BF0004F41CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZuumPreview;
+			productName = ZuumPreview;
+			productReference = EFBAFACE24379BF0004F41CE /* ZuumPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFBAFAE124379BF2004F41CE /* ZuumPreviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFBAFAF724379BF2004F41CE /* Build configuration list for PBXNativeTarget "ZuumPreviewTests" */;
+			buildPhases = (
+				EFBAFADE24379BF2004F41CE /* Sources */,
+				EFBAFADF24379BF2004F41CE /* Frameworks */,
+				EFBAFAE024379BF2004F41CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFBAFAE424379BF2004F41CE /* PBXTargetDependency */,
+			);
+			name = ZuumPreviewTests;
+			productName = ZuumPreviewTests;
+			productReference = EFBAFAE224379BF2004F41CE /* ZuumPreviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFBAFAEC24379BF2004F41CE /* ZuumPreviewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFBAFAFA24379BF2004F41CE /* Build configuration list for PBXNativeTarget "ZuumPreviewUITests" */;
+			buildPhases = (
+				EFBAFAE924379BF2004F41CE /* Sources */,
+				EFBAFAEA24379BF2004F41CE /* Frameworks */,
+				EFBAFAEB24379BF2004F41CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFBAFAEF24379BF2004F41CE /* PBXTargetDependency */,
+			);
+			name = ZuumPreviewUITests;
+			productName = ZuumPreviewUITests;
+			productReference = EFBAFAED24379BF2004F41CE /* ZuumPreviewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -93,11 +344,24 @@
 		EFBAFAB124379B3D004F41CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Robert Tolar Haining";
 				TargetAttributes = {
 					EFBAFAB924379B3D004F41CE = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+					};
+					EFBAFACD24379BF0004F41CE = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					EFBAFAE124379BF2004F41CE = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = EFBAFACD24379BF0004F41CE;
+					};
+					EFBAFAEC24379BF2004F41CE = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = EFBAFACD24379BF0004F41CE;
 					};
 				};
 			};
@@ -114,13 +378,42 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EFBAFAB924379B3D004F41CE /* ZuumScreensaver */,
+				EFBAFAB924379B3D004F41CE /* Zooooom */,
+				EFBAFACD24379BF0004F41CE /* ZuumPreview */,
+				EFBAFAE124379BF2004F41CE /* ZuumPreviewTests */,
+				EFBAFAEC24379BF2004F41CE /* ZuumPreviewUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EFBAFAB824379B3D004F41CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC091ED243B933C001E0DEC /* thumbnail.png in Resources */,
+				EFC091EE243B933C001E0DEC /* thumbnail@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBAFACC24379BF0004F41CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBAFADB24379BF2004F41CE /* Main.storyboard in Resources */,
+				EFBAFAD824379BF2004F41CE /* Preview Assets.xcassets in Resources */,
+				EFBAFAD524379BF2004F41CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBAFAE024379BF2004F41CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBAFAEB24379BF2004F41CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,11 +427,87 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFBAFAC024379B3D004F41CE /* ZuumScreensaverView.m in Sources */,
+				EFE7A9362439388F00F8D8E1 /* ProgressIndicator.swift in Sources */,
+				EFBAFAC924379B56004F41CE /* ZuumScreensaverView.swift in Sources */,
+				EFE7A9322438EC1400F8D8E1 /* VideoPlayerView.swift in Sources */,
+				EFBAFB092437BED1004F41CE /* ConnectingView.swift in Sources */,
+				EFC091E8243B7FFB001E0DEC /* Dice.swift in Sources */,
+				EF0E7099243A5ACD0082305E /* ConfigFetcher.swift in Sources */,
+				EFC091F0243BD683001E0DEC /* ToolbarView.swift in Sources */,
+				EFC091FC243E50FE001E0DEC /* VideoPlayerStateOverlay.swift in Sources */,
+				EFC091FF243E5BC7001E0DEC /* VersionHelper.swift in Sources */,
+				EFC091F9243E3125001E0DEC /* ErrorView.swift in Sources */,
+				EF0E709C243A5B360082305E /* Config.swift in Sources */,
+				EF0E7094243A3CAF0082305E /* Blockbuster.swift in Sources */,
+				EFC091F6243CE8E0001E0DEC /* MenuBarView.swift in Sources */,
+				EFE7A92F2438EAE200F8D8E1 /* VideoGridViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBAFACA24379BF0004F41CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE7A9372439388F00F8D8E1 /* ProgressIndicator.swift in Sources */,
+				EFE7A9302438EAE200F8D8E1 /* VideoGridViewController.swift in Sources */,
+				EFC091F1243BD683001E0DEC /* ToolbarView.swift in Sources */,
+				EFBAFB0A2437BED1004F41CE /* ConnectingView.swift in Sources */,
+				EFC09200243E5BC7001E0DEC /* VersionHelper.swift in Sources */,
+				EFC091FD243E50FE001E0DEC /* VideoPlayerStateOverlay.swift in Sources */,
+				EF0E709D243A5B360082305E /* Config.swift in Sources */,
+				EFBAFAD124379BF0004F41CE /* AppDelegate.swift in Sources */,
+				EFC091F7243CE8E0001E0DEC /* MenuBarView.swift in Sources */,
+				EF0E709A243A5ACD0082305E /* ConfigFetcher.swift in Sources */,
+				EFC091E9243B8004001E0DEC /* Dice.swift in Sources */,
+				EF0E7095243A3CAF0082305E /* Blockbuster.swift in Sources */,
+				EFE7A9332438EC1400F8D8E1 /* VideoPlayerView.swift in Sources */,
+				EFC091FA243E3125001E0DEC /* ErrorView.swift in Sources */,
+				EFBAFB0124379C3D004F41CE /* ZuumScreensaverView.swift in Sources */,
+				EFBAFB0024379C1A004F41CE /* PreviewScreensaverViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBAFADE24379BF2004F41CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBAFAE724379BF2004F41CE /* ZuumPreviewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBAFAE924379BF2004F41CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBAFAF224379BF2004F41CE /* ZuumPreviewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFBAFAE424379BF2004F41CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFBAFACD24379BF0004F41CE /* ZuumPreview */;
+			targetProxy = EFBAFAE324379BF2004F41CE /* PBXContainerItemProxy */;
+		};
+		EFBAFAEF24379BF2004F41CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFBAFACD24379BF0004F41CE /* ZuumPreview */;
+			targetProxy = EFBAFAEE24379BF2004F41CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFBAFAD924379BF2004F41CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFBAFADA24379BF2004F41CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EFBAFAC224379B3D004F41CE /* Debug */ = {
@@ -253,13 +622,25 @@
 		EFBAFAC524379B3D004F41CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
 				INFOPLIST_FILE = ZuumScreensaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZuumScreensaver;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZooooomScreensaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZuumScreensaver/ZuumScreensaver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -267,14 +648,167 @@
 		EFBAFAC624379B3D004F41CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
 				INFOPLIST_FILE = ZuumScreensaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZuumScreensaver;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZooooomScreensaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZuumScreensaver/ZuumScreensaver-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		EFBAFAF524379BF2004F41CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZuumPreview/ZuumPreview.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ZuumPreview/Preview Content\"";
+				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ZuumPreview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZuumPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EFBAFAF624379BF2004F41CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZuumPreview/ZuumPreview.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ZuumPreview/Preview Content\"";
+				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ZuumPreview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZuumPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EFBAFAF824379BF2004F41CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
+				INFOPLIST_FILE = ZuumPreviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZuumPreviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZuumPreview.app/Contents/MacOS/ZuumPreview";
+			};
+			name = Debug;
+		};
+		EFBAFAF924379BF2004F41CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
+				INFOPLIST_FILE = ZuumPreviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZuumPreviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZuumPreview.app/Contents/MacOS/ZuumPreview";
+			};
+			name = Release;
+		};
+		EFBAFAFB24379BF2004F41CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
+				INFOPLIST_FILE = ZuumPreviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZuumPreviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ZuumPreview;
+			};
+			name = Debug;
+		};
+		EFBAFAFC24379BF2004F41CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
+				INFOPLIST_FILE = ZuumPreviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZuumPreviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ZuumPreview;
 			};
 			name = Release;
 		};
@@ -290,11 +824,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFBAFAC424379B3D004F41CE /* Build configuration list for PBXNativeTarget "ZuumScreensaver" */ = {
+		EFBAFAC424379B3D004F41CE /* Build configuration list for PBXNativeTarget "Zooooom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EFBAFAC524379B3D004F41CE /* Debug */,
 				EFBAFAC624379B3D004F41CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFBAFAF424379BF2004F41CE /* Build configuration list for PBXNativeTarget "ZuumPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFBAFAF524379BF2004F41CE /* Debug */,
+				EFBAFAF624379BF2004F41CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFBAFAF724379BF2004F41CE /* Build configuration list for PBXNativeTarget "ZuumPreviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFBAFAF824379BF2004F41CE /* Debug */,
+				EFBAFAF924379BF2004F41CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFBAFAFA24379BF2004F41CE /* Build configuration list for PBXNativeTarget "ZuumPreviewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFBAFAFB24379BF2004F41CE /* Debug */,
+				EFBAFAFC24379BF2004F41CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
