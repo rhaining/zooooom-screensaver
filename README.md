@@ -1,6 +1,9 @@
 # Zooooom Screensaver
+_A screensaver for these anxious times_
 
-The screensaver for https://github.com/harperreed/zooooom.us
+The screensaver for https://github.com/harperreed/zooooom.us / https://zooooom.us/
+
+![Zooooom](http://zooooom.us/images/screenshot.jpg)
 
 You can build & install this locally, but you'll need an Apple developer account setup to notarize the build if you want to share with others.
 
