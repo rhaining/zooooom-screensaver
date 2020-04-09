@@ -16,7 +16,7 @@ echo "Starting…" > $LOG_PATH
 
 open -a Terminal.app "$SRCROOT/bin/open_log.sh"
 
-sleep 5s
+sleep 10s
 
 echo "/bin/mkdir \"$EXPORT_PATH\"" >> $LOG_PATH
 /bin/mkdir "$EXPORT_PATH" >> $LOG_PATH
