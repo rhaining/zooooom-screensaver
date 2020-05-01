@@ -17,9 +17,21 @@ struct Config: Codable {
     let upgradeMessage: String?
     
     let videos: [String]
+    let deafVideos: [String]
+    
     var videoURLS: [URL] {
-        return videos.compactMap { (urlStr) -> URL? in
+        return preferredVideoSetURLStrings.compactMap { (urlStr) -> URL? in
             return URL(string: urlStr) ?? nil
+        }
+    }
+    
+    private var preferredVideoSetURLStrings: [String] {
+        switch DefaultsHelper.getPreferredVideoSet() {
+            case .everyone:
+                return videos
+            
+            case .deaf:
+                return deafVideos
         }
     }
     

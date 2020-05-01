@@ -13,6 +13,12 @@
 		EF0E709A243A5ACD0082305E /* ConfigFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E7098243A5ACD0082305E /* ConfigFetcher.swift */; };
 		EF0E709C243A5B360082305E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E709B243A5B360082305E /* Config.swift */; };
 		EF0E709D243A5B360082305E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E709B243A5B360082305E /* Config.swift */; };
+		EF7B9BA8245C803800E42A42 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D947B2447852C0053B49F /* OptionsViewController.swift */; };
+		EF7B9BA9245C803800E42A42 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D947E2447856A0053B49F /* OptionsView.swift */; };
+		EF7B9BAA245C803900E42A42 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D947B2447852C0053B49F /* OptionsViewController.swift */; };
+		EF7B9BAB245C803900E42A42 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8D947E2447856A0053B49F /* OptionsView.swift */; };
+		EF7B9BAD245CAA7B00E42A42 /* VideoSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B9BAC245CAA7B00E42A42 /* VideoSet.swift */; };
+		EF7B9BAE245CAA7B00E42A42 /* VideoSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B9BAC245CAA7B00E42A42 /* VideoSet.swift */; };
 		EFBAFAC924379B56004F41CE /* ZuumScreensaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFAC824379B56004F41CE /* ZuumScreensaverView.swift */; };
 		EFBAFAD124379BF0004F41CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBAFAD024379BF0004F41CE /* AppDelegate.swift */; };
 		EFBAFAD524379BF2004F41CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBAFAD424379BF2004F41CE /* Assets.xcassets */; };
@@ -69,6 +75,9 @@
 		EF0E709B243A5B360082305E /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		EF0E709F243A5F410082305E /* open_log.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = open_log.sh; sourceTree = "<group>"; };
 		EF0E70A0243A5F410082305E /* notarize.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = notarize.sh; sourceTree = "<group>"; };
+		EF7B9BAC245CAA7B00E42A42 /* VideoSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSet.swift; sourceTree = "<group>"; };
+		EF8D947B2447852C0053B49F /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		EF8D947E2447856A0053B49F /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		EFBAFABA24379B3D004F41CE /* Zooooom.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Zooooom.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBAFAC124379B3D004F41CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFBAFAC724379B55004F41CE /* ZuumScreensaver-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZuumScreensaver-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -143,6 +152,8 @@
 				EFE7A9352439388F00F8D8E1 /* ProgressIndicator.swift */,
 				EFC091EF243BD683001E0DEC /* ToolbarView.swift */,
 				EFC091F5243CE8E0001E0DEC /* MenuBarView.swift */,
+				EF8D947B2447852C0053B49F /* OptionsViewController.swift */,
+				EF8D947E2447856A0053B49F /* OptionsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +163,7 @@
 			children = (
 				EF0E7098243A5ACD0082305E /* ConfigFetcher.swift */,
 				EF0E709B243A5B360082305E /* Config.swift */,
+				EF7B9BAC245CAA7B00E42A42 /* VideoSet.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -430,12 +442,15 @@
 				EFE7A9362439388F00F8D8E1 /* ProgressIndicator.swift in Sources */,
 				EFBAFAC924379B56004F41CE /* ZuumScreensaverView.swift in Sources */,
 				EFE7A9322438EC1400F8D8E1 /* VideoPlayerView.swift in Sources */,
+				EF7B9BA9245C803800E42A42 /* OptionsView.swift in Sources */,
 				EFBAFB092437BED1004F41CE /* ConnectingView.swift in Sources */,
 				EFC091E8243B7FFB001E0DEC /* Dice.swift in Sources */,
 				EF0E7099243A5ACD0082305E /* ConfigFetcher.swift in Sources */,
 				EFC091F0243BD683001E0DEC /* ToolbarView.swift in Sources */,
 				EFC091FC243E50FE001E0DEC /* VideoPlayerStateOverlay.swift in Sources */,
 				EFC091FF243E5BC7001E0DEC /* VersionHelper.swift in Sources */,
+				EF7B9BA8245C803800E42A42 /* OptionsViewController.swift in Sources */,
+				EF7B9BAD245CAA7B00E42A42 /* VideoSet.swift in Sources */,
 				EFC091F9243E3125001E0DEC /* ErrorView.swift in Sources */,
 				EF0E709C243A5B360082305E /* Config.swift in Sources */,
 				EF0E7094243A3CAF0082305E /* Blockbuster.swift in Sources */,
@@ -451,9 +466,11 @@
 				EFE7A9372439388F00F8D8E1 /* ProgressIndicator.swift in Sources */,
 				EFE7A9302438EAE200F8D8E1 /* VideoGridViewController.swift in Sources */,
 				EFC091F1243BD683001E0DEC /* ToolbarView.swift in Sources */,
+				EF7B9BAB245C803900E42A42 /* OptionsView.swift in Sources */,
 				EFBAFB0A2437BED1004F41CE /* ConnectingView.swift in Sources */,
 				EFC09200243E5BC7001E0DEC /* VersionHelper.swift in Sources */,
 				EFC091FD243E50FE001E0DEC /* VideoPlayerStateOverlay.swift in Sources */,
+				EF7B9BAA245C803900E42A42 /* OptionsViewController.swift in Sources */,
 				EF0E709D243A5B360082305E /* Config.swift in Sources */,
 				EFBAFAD124379BF0004F41CE /* AppDelegate.swift in Sources */,
 				EFC091F7243CE8E0001E0DEC /* MenuBarView.swift in Sources */,
@@ -464,6 +481,7 @@
 				EFC091FA243E3125001E0DEC /* ErrorView.swift in Sources */,
 				EFBAFB0124379C3D004F41CE /* ZuumScreensaverView.swift in Sources */,
 				EFBAFB0024379C1A004F41CE /* PreviewScreensaverViewController.swift in Sources */,
+				EF7B9BAE245CAA7B00E42A42 /* VideoSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +644,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
 				INFOPLIST_FILE = ZuumScreensaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -636,6 +654,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZooooomScreensaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -653,7 +672,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
 				INFOPLIST_FILE = ZuumScreensaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -663,6 +682,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZooooomScreensaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -689,6 +709,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZuumPreview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -714,6 +735,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZuumPreview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;

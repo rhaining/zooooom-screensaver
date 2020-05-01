@@ -36,4 +36,28 @@ final class ZuumScreensaverView: ScreenSaverView {
             videoGridViewController?.blockbuster.didType(characters)
         }
     }
+
+    override var hasConfigureSheet: Bool {
+        return true
+    }
+
+    var optionsViewController: OptionsViewController?
+    override var configureSheet: NSWindow? {
+        get {
+            let sheetFrame = NSRect(x: 0, y: 0, width: 500, height: 300)
+            let vc = OptionsViewController()
+            vc.view.frame = sheetFrame
+            optionsViewController = vc
+            
+            let window = NSWindow(
+                contentRect: sheetFrame,
+                styleMask: [.fullSizeContentView],
+                backing: .buffered, defer: false)
+            window.center()
+            window.setFrameAutosaveName("Configure Sheet")
+            window.contentView = vc.view
+            
+            return window
+        }
+    }
 }

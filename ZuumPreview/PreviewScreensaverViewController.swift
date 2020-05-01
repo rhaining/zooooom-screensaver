@@ -41,6 +41,8 @@ class PreviewScreensaverViewController: NSViewController {
         super.viewDidAppear()
         
         isAnimating = true
+        
+        loadOptionsWindow()
     }
     
     override func viewWillDisappear() {
@@ -53,5 +55,9 @@ class PreviewScreensaverViewController: NSViewController {
         if isAnimating, let screensaverView = screensaverView {
             screensaverView.animateOneFrame()
         }
+    }
+    
+    func loadOptionsWindow() {
+        screensaverView?.configureSheet?.makeKeyAndOrderFront(nil)
     }
 }
