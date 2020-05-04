@@ -42,7 +42,7 @@ class PreviewScreensaverViewController: NSViewController {
         
         isAnimating = true
         
-        loadOptionsWindow()
+//        loadOptionsWindow()
     }
     
     override func viewWillDisappear() {
