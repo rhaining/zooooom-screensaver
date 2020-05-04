@@ -17,6 +17,16 @@ final class VideoPlayerStateOverlay: NSView {
             lost(_ message: String?)
     }
     
+    var isLost: Bool {
+        switch state {
+            case .lost(_):
+                return true
+            
+            default:
+                return false
+        }
+    }
+    
     var state = State.none {
         didSet {
             var progressIndicatorEnabled: Bool
@@ -131,7 +141,7 @@ final class VideoPlayerStateOverlay: NSView {
         
         frame.size = CGSize(width: bounds.width, height: 50)
         frame.origin.x = 0
-        frame.origin.y = 0
+        frame.origin.y = -1
         messageLabelWrapper.frame = frame
 
         frame.size = CGSize(width: messageLabelWrapper.bounds.width, height: 20)

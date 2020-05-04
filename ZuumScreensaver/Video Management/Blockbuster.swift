@@ -112,6 +112,12 @@ final class Blockbuster: ObservableObject {
         guard !cancelRandom else { return }
         
         let choice = Dice.roll()
+        performAction(choice)
+        
+        enableRandomness()
+    }
+    
+    private func performAction(_ choice: Dice) {
         switch choice {
             case .add:
                 addAVideo()
@@ -129,8 +135,6 @@ final class Blockbuster: ObservableObject {
             case .loseConnection:
                 loseAConnection()
         }
-        
-        enableRandomness()
     }
     
     private func addThisVideo(with url: URL) {
@@ -212,37 +216,93 @@ final class Blockbuster: ObservableObject {
             upgradeMessage = nil
         }
     }
-    
+}
+
+extension Blockbuster {
     func didType(_ chars: String) {
+        let action: Dice
         switch chars {
+            case "d":
+                enableDebugMode()
+                action = .stay
+            
             case "c":
                 NSLog("cancel random")
                 toggleRandom(canceled: true)
+                action = .stay
             
             case "e":
                 NSLog("enable random")
                 toggleRandom(canceled: false)
                 enableRandomness()
+                action = .stay
             
             case "a":
                 NSLog("add a video")
-                addAVideo()
+                action = .add
             
             case "r":
                 NSLog("remove a video")
-                removeAVideo()
+                action = .remove
             
             case "l":
                 NSLog("lose a connection")
-                loseAConnection()
+                action = .loseConnection
             
             case "p":
                 NSLog("pause a video")
-                pauseAVideo()
+                action = .pause
+            
+            case "+":
+                NSLog("increase number of videos")
+                config?.maxVideos? += 1
+                NSLog("max number of videos is now \(String(describing: config?.maxVideos))")
+                action = .stay
             
             default:
                 NSLog("unknown command")
+                action = .stay
         }
+        performAction(action)
+    }
+    
+    func didClick(_ location: NSPoint) {
+        for vv in videoViews {
+            if vv.frame.contains(location) {
+                NSLog("Clicked: \(vv.url)")
+            }
+        }
+    }
+}
+
+extension Blockbuster {
+    func showNextSet(start: Int = 0) {
+        guard let allVideoURLs = allVideoURLs else { return }
+        
+        for vv in videoViews {
+            removeThisVideo(videoView: vv)
+        }
+        
+        let end = min(start + 12, allVideoURLs.count)
+        let videoURLs = allVideoURLs.sorted(by: { (a, b) -> Bool in
+            return a.absoluteString.compare(b.absoluteString) == .orderedAscending
+        })[start..<end]
+        
+        for url in videoURLs {
+            addThisVideo(with: url)
+        }
+        
+        if end < allVideoURLs.count {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) { [weak self] in
+                self?.showNextSet(start: end)
+            }
+        } else {
+            toggleRandom(canceled: false)
+        }
+    }
+    func enableDebugMode() {
+        toggleRandom(canceled: true)
+        showNextSet()
     }
 }
 

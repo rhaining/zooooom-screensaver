@@ -162,8 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				EF0E7098243A5ACD0082305E /* ConfigFetcher.swift */,
-				EF0E709B243A5B360082305E /* Config.swift */,
-				EF7B9BAC245CAA7B00E42A42 /* VideoSet.swift */,
+				EFD84AA82460741A00804284 /* Models */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -264,6 +263,15 @@
 				EFC091E7243B7FFB001E0DEC /* Dice.swift */,
 			);
 			path = "Video Management";
+			sourceTree = "<group>";
+		};
+		EFD84AA82460741A00804284 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF0E709B243A5B360082305E /* Config.swift */,
+				EF7B9BAC245CAA7B00E42A42 /* VideoSet.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -644,7 +652,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
 				INFOPLIST_FILE = ZuumScreensaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -654,7 +662,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZooooomScreensaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -672,7 +680,7 @@
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3RF4ZJHWHU;
 				INFOPLIST_FILE = ZuumScreensaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -682,7 +690,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = co.tolar.ZooooomScreensaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

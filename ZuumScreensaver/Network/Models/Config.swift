@@ -10,7 +10,7 @@ import Foundation
 
 struct Config: Codable {
     let minVideos: Int?
-    let maxVideos: Int?
+    var maxVideos: Int?
     
     let connectionErrorMessages: [String]?
     let version: String?

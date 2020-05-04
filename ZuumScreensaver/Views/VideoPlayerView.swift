@@ -68,7 +68,8 @@ final class VideoPlayerView: NSView {
     
     func play(to percent: Double? = nil) {
         guard let player = playerView.player,
-            let currentItem = player.currentItem else { return }
+            let currentItem = player.currentItem,
+            !stateOverlay.isLost else { return }
         
         if let percent = percent {
             let value = percent * currentItem.asset.duration.seconds
@@ -84,6 +85,8 @@ final class VideoPlayerView: NSView {
     }
     
     func pause(message: String?, warning: Bool = false) {
+        guard !stateOverlay.isLost else { return }
+        
         playerView.player?.pause()
         
         playerView.alphaValue = 0.6
@@ -117,6 +120,8 @@ final class VideoPlayerView: NSView {
         })
     }
     private func didUpdateReasonForWaitingToPlay() {
+        guard !stateOverlay.isLost else { return }
+
         let isStalled = (playerView.player?.reasonForWaitingToPlay != nil)
         if isStalled {
             dateOfStall = Date()

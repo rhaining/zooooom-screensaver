@@ -23,7 +23,7 @@ enum Dice: CaseIterable {
             case 40..<50:
                 return .pause
             
-            case 50..<60:
+            case 50..<55:
                 return .loseConnection
             
             default:

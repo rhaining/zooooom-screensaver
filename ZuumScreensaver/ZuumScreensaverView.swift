@@ -32,9 +32,16 @@ final class ZuumScreensaverView: ScreenSaverView {
     override var acceptsFirstResponder: Bool { return true }
 
     override func keyUp(with event: NSEvent) {
+        super.keyUp(with: event)
         if let characters = event.characters {
             videoGridViewController?.blockbuster.didType(characters)
         }
+    }
+    
+    override func mouseUp(with event: NSEvent) {
+        super.mouseUp(with: event)
+        let location = event.locationInWindow
+        videoGridViewController?.blockbuster.didClick(location)
     }
 
     override var hasConfigureSheet: Bool {
